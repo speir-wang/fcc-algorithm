@@ -19,3 +19,14 @@ function whatIsInAName(collection, source) {
 		});
 	});
 }
+
+/**
+ * lesson learnt:
+ * 1. property in object is used to detect if the object has that property
+ * can also use object.hasOwnProperty(property) to do the same thing.
+ *
+ * 2. The every() method tests whether ALL elements in the array pass the test implemented by the provided
+ * function.
+ *
+ * This could be very useful when we want to test if EVERY element meets the conditions.
+ */
