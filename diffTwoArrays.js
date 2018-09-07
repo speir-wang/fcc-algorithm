@@ -13,10 +13,10 @@
  */
 function diffArray(arr1, arr2) {
 	const newArr = arr1.concat(arr2);
-	return newArr.filter(item => {
+	return newArr.filter(
+		item => newArr.indexOf(item) === newArr.lastIndexOf(item)
 		// if the last index equals to the first index, then it means there is only one such item in the array.
-		return newArr.indexOf(item) === newArr.lastIndexOf(item);
-	});
+	);
 }
 
 diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
