@@ -14,16 +14,15 @@ function fearNotLetter(str) {
 		.split("")
 		.map(letter => letter.charCodeAt(0))
 		.find((item, index, array) => {
-			// console.log(item);
-			// console.log(array[index + 1]);
-			// if () {
-			// 	console.log("FOUND", item + 1);
-			// }
 			return array[index + 1] - item > 1;
 		});
-
-	return missingLetterCode;
+	missingLetterCode = missingLetterCode + 1;
+	return isNaN(missingLetterCode) ? undefined : String.fromCharCode(missingLetterCode);
 }
 
-console.log(fearNotLetter("bcdf"));
-// fearNotLetter("bcdf");
+console.log(fearNotLetter("abcdefghijklmnopqrstuvwxyz"));
+
+/**
+ * using isNaN() to test if a number is NaN, comparing the number === NaN is not working as
+ * expected.
+ */
