@@ -10,6 +10,12 @@
  *
  */
 
+/**
+ *
+ * @param {String} str
+ * @param {String} before
+ * @param {String} after
+ */
 function myReplace(str, before, after) {
 	let newAfter = "";
 

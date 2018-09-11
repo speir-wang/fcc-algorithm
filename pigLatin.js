@@ -7,6 +7,10 @@
  * Input strings are guaranteed to be English words in all lowercase.
  */
 
+/**
+ *
+ * @param {String} str
+ */
 function translatePigLatin(str) {
 	let pigLatinCopy = "";
 	let vows = ["a", "e", "i", "o", "u"];
