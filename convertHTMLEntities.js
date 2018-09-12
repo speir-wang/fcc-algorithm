@@ -8,8 +8,12 @@
  * @param {String} str
  */
 function convertHTML(str) {
-	console.log(str.includes('"'));
-	return str;
+	return str
+		.replace(/&/g, "&amp;")
+		.replace(/>/g, "&gt;")
+		.replace(/</g, "&lt;")
+		.replace(/"/g, "&quot;")
+		.replace(/'/g, "&​apos;");
 }
 
-convertHTML('Dolce " & Gabbana');
+console.log(convertHTML("Schindler's List"));
